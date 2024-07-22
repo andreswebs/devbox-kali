@@ -1,6 +1,6 @@
-# devbox
+# devbox-kali
 
-Codespaces template for a Debian environment with Nix.
+Codespaces template for a Kali environment with Nix.
 
 ## Authors
 

@@ -1,6 +1,6 @@
 {
-  "name": "devbox",
-  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "name": "devbox-kali",
+  "image": "docker.io/kalilinux/kali-rolling:latest",
   "features": {
     "ghcr.io/devcontainers/features/nix:1": {
       "multiUser": true,
@@ -37,5 +37,6 @@
       }
     }
   },
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install --yes --quiet kali-linux-headless",
   "updateContentCommand": "rm README.md && rm UNLICENSE.md"
 }
