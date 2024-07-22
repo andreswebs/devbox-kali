@@ -38,5 +38,6 @@
     }
   },
   "onCreateCommand": "sudo apt-get update && sudo apt-get install --yes --quiet kali-linux-headless",
-  "updateContentCommand": "rm README.md && rm UNLICENSE.md"
+  "updateContentCommand": "rm README.md && rm UNLICENSE.md",
+  "remoteUser": "root"
 }
