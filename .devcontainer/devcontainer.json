@@ -37,7 +37,7 @@
       }
     }
   },
-  "onCreateCommand": "apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --quiet kali-linux-headless",
+  "onCreateCommand": "apt-get update && $(mv /etc/zsh/zshrc /etc/zsh/zshrc.bak || true) && DEBIAN_FRONTEND=noninteractive apt-get install --yes --quiet kali-linux-headless && $(mv /etc/zsh/zshrc /etc/zsh/zshrc.new.bak || true) && $(mv /etc/zsh/zshrc.bak /etc/zsh/zshrc || true)",
   "updateContentCommand": "rm README.md && rm UNLICENSE.md",
   "remoteUser": "root"
 }
