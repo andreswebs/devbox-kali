@@ -37,7 +37,7 @@
       }
     }
   },
-  "onCreateCommand": "apt-get update && apt-get install --yes --quiet kali-linux-headless",
+  "onCreateCommand": "apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --yes --quiet kali-linux-headless",
   "updateContentCommand": "rm README.md && rm UNLICENSE.md",
   "remoteUser": "root"
 }
