@@ -32,7 +32,8 @@
           "redhat.vscode-yaml",
           "yzhang.markdown-all-in-one",
           "DavidAnson.vscode-markdownlint",
-          "ms-vscode.makefile-tools"
+          "ms-vscode.makefile-tools",
+          "sleistner.vscode-fileutils"
         ]
       }
     }
